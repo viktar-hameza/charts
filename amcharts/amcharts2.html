@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>МТБанк</title>
+    <title>chart created with amCharts | amCharts</title>
+    <meta name="description" content="chart created using amCharts live editor" />
+
+    <!-- amCharts javascript sources -->
+    <script type="text/javascript" src="http://www.amcharts.com/lib/3/amcharts.js"></script>
+    <script type="text/javascript" src="http://www.amcharts.com/lib/3/serial.js"></script>
+    <style>
+      a {
+        display: none !important;
+      }
+    </style>
+    <!-- amCharts javascript code -->
+    <script type="text/javascript">
+      AmCharts.makeChart("chartdiv",
+        {
+          "type": "serial",
+          "categoryField": "category",
+          "rotate": true,
+          "angle": 30,
+          "depth3D": 30,
+          "startDuration": 1,
+          "categoryAxis": {
+            "gridPosition": "start"
+          },
+          "trendLines": [],
+          "graphs": [
+            {
+              "balloonText": "[[title]] of [[category]]:[[value]]",
+              "fillAlphas": 1,
+              "id": "AmGraph-1",
+              "title": "graph 1",
+              "type": "column",
+              "valueField": "column-1"
+            },
+            {
+              "balloonText": "[[title]] of [[category]]:[[value]]",
+              "fillAlphas": 1,
+              "id": "AmGraph-2",
+              "title": "graph 2",
+              "type": "column",
+              "valueField": "column-2"
+            }
+          ],
+          "guides": [],
+          "valueAxes": [
+            {
+              "id": "ValueAxis-1",
+              "title": ""
+            }
+          ],
+          "allLabels": [],
+          "balloon": {},
+          "legend": {
+            "enabled": true,
+            "useGraphSettings": true
+          },
+          "titles": [
+            {
+              "id": "Title-1",
+              "size": 15,
+              "text": "Отчет о прибылях и убытках за 2014-2015"
+            }
+          ],
+          "dataProvider": [
+            {
+              "category": "Процентные доходы",
+              "column-1": "1439568",
+              "column-2": "1458486"
+            },
+            {
+              "category": "Процентные расходы",
+              "column-1": "668114",
+              "column-2": "659316"
+            },
+            {
+              "category": "Чистый процентный доход",
+              "column-1": "771454",
+              "column-2": "799170"
+            },
+            {
+              "category": "Отчисления в резервы",
+              "column-1": "387225",
+              "column-2": "326269"
+            },
+            {
+              "category": "Чистый комиссионный доход",
+              "column-1": "187698",
+              "column-2": "228654"
+            },
+            {
+              "category": "Прочие доходы",
+              "column-1": "260913",
+              "column-2": "134186"
+            },
+            {
+              "category": "Прочие расходы",
+              "column-1": "606483",
+              "column-2": "481426"
+            },
+            {
+              "category": "Убыток от гиперинфляции",
+              "column-1": "0",
+              "column-2": "83961"
+            },
+            {
+              "category": "Прибыль до налога",
+              "column-1": "222093",
+              "column-2": "269799"
+            },
+            {
+              "category": "Налог на прибыль",
+              "column-1": "43032",
+              "column-2": "69323"
+            },
+            {
+              "category": "Прибыль за отчетный год",
+              "column-1": "179061",
+              "column-2": "200476"
+            }
+          ]
+        }
+      );
+    </script>
+  </head>
+  <body>
+    <div id="chartdiv" style="width: 100%; height: 600px; background-color: #FFFFFF;" ></div>
+  </body>
+</html>
